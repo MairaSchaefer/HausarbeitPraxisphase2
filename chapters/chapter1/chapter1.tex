@@ -1,35 +1,32 @@
 \chapter{Problemstellung: Die globale Zunahme von Waldbrandereignissen}\label{ch:problemstellung}
 
-Die Anzahl und Intensität an Waldbränden nehmen global zu. Sie sind nicht mehr nur ein saisonales Phänomen, sondern eine chronische, weltweite Bedrohung und ihr Auswirkungen sind verherrend. 
-Sie zerstören nicht nur große Flächen an Wald, sondern auch die darin lebenden Tiere und Pflanzen.
+Die Anzahl und Intensität von Waldbränden nimmt global zu. Sie sind nicht mehr nur ein saisonales Phänomen, sondern eine chronische, weltweite Bedrohung, deren ökologischen, sozialen und ökonomischen Auswirkungen verherrend sind. 
 
-Neben der Zerstörung von Ökosystemen und der Freisetzung großer Mengen an Treibhausgasen, leiden auch die betroffenen Gemeinden unter den Folgen. Gesundheitliche Probleme durch Rauch, Verlust von Eigentum und Lebensgrundlagen sowie die Belastung der Einsatzkräfte sind nur einige der Konsequenzen. 
+Neben der Zerstörung von Ökosystemen und dem Verlust von Biodiversität führen Waldbrände zur Freisetzung großer Mengen an Treibhausgasen, was die anthropogene Erderwärmung weiter verstärkt. Gesundheitliche Probleme durch Rauch, der Verlust von Eigentum und Lebensgrundlagen sowie die Belastung der Einsatzkräfte sind nur einige der Konsequenzen. Die wirtschaftlichen Kosten sind enorm. Allein in Europa belaufen sich die jährlichen Kosten nur für die Bekämpfung von Waldbränden auf etwa zwei Milliarden Euro~\cite{JointResearchCentre2023}. Die wirtschaftliche Tragweite von Waldbränden zeigt sich besonders am Beispiel Kaliforniens, wo die jährlichen Kosten für die Bekämpfung regelmäßig die staatlichen Kapazitäten übersteigen. Laut dem überparteilichen Legislative Analyst's Office (LAO) beliefen sich die Gesamtausgaben für den Brandschutz im Jahr 2020 auf rund 3,1 Milliarden USD und überstiegen damit die ursprüngliche Budgetierung um fast eine Milliarde USD~\cite{LegislativeAnalystsOffice2020}. 
 
+Die Gründe für die zunehmenden Waldbrandereignisse sind vielschichtig. Während menschliche Fahrlässigkeit und Brandstiftung oft die unmittelbaren Auslöser darstellen und zu enormen ökologischen und ökonomischen Schäden führen~\cite{Umweltbundesamt2024}, fungiert der Klimawandel als zusätzlicher Verstärker. Zwar ist die Erderwärmung selten die alleinige Ursache, sie verschärft die Ausmaße der Brände aber maßgeblich~\cite{GianniBorisPezzatti2016}. So überschritt das Jahr 2024 erstmals die 1,5°C-Grenze. Dies begünstigt durch die zunehmende Austrocknung von Böden und Vegetation die Entstehung von Feuern massiv~\cite{Copernicus2025}.
 
+Herkömmliche Methoden wie bemannte Feuerwachtürme oder der bundesweit bekannte Notruf stoßen hierbei an ihre Grenzen. Zwar existieren bereits moderne technische Lösungen, diese weisen jedoch noch Schwächen auf~\cite{Mohapatra2022}.
+Satellitensysteme bieten beispielsweise eine großflächige Abdeckung, haben aber nur niedrige Wiederholraten, sodass eine erforderliche Echtzeit-Warnung oft nicht möglich ist. Terrestrische Kamerasysteme sind hingegen schneller, ihre Zuverlässigkeit ist jedoch stark von Sichtblockaden wie Nebel, Topografie oder dichte Vegetation abhängig. Außerdem führen Fehlalarme, etwa durch Wolkenschatten oder Sonnenreflexionen, zu einer Desensibilisierung der Einsatzkräfte und zu einer Verschwendung der Ressourcen~\cite{Chagger2018}. IoT-basierte Sensoren benötigen hingegen großflächige Netze mit hunderten Sensorknoten, um eine effektive Abdeckung zu gewährleisten. Dies ist mit hohen Kosten und Wartungsaufwand verbunden~\cite{Klick2021}.
 
+Folglich besteht eine Diskrepanz zwischen den theoretischen Möglichkeiten einzelner Technologien und den praktischen Anforderungen an ein System, das minimale Latenz mit einer niedrigen Fehlalarmrate verbindet. 
 
-Die Gründe für die ansteigenden Waldbrandereignisse sind vielschichtig. Während menschliche Fahrlässigkeit und Brandstiftung oft die unmittelbaren Auslöser darstellen und zu enormen ökologischen und ökonomischen Schäden führen~\cite{Umweltbundesamt2024}, fungiert der anthropogene Klimawandel als zusätzlicher Verstärker. Zwar ist die Erderwärmung selten alleinige Ursache, sie verschärft die Ausmaße der Brände aber maßgeblich~\cite{GianniBorisPezzatti2016}. So überschritt das Jahr 2024 erstmals die 1,5°C-Grenze, was durch die zunehmende Austrocknung von Böden und Vegetation die entstehung von Feuern massiv begünstigt~\cite{Copernicus2025}.
-
-
-
-In den USA belaufen sich so die Kosten für Brandbekämpfung auf jährlich ca. 2,5 Mrd. USD, während die Gesamtschäden sogar bis auf 10 Mrd. USD geschätzt werden [Dryad Networks, 2023].
-Zur Minimierung dieser Schäden ist der Zeitfaktor entscheidend. Die Phase zwischen der Zündung und dem offenen Feuer bietet dabei das größte Potenzial zur effektiven Brandbekämpfung.
-Herkömmlich angewandte Methoden wie bemannte Feuerwachtürme oder der bundesweit bekannte Notruf stoßen hierbei an ihre Grenzen. Moderne technische Lösungen existieren zwar bereits, weisen jedoch noch signifikante Schwächen auf [Mohapatra, 2022].
-Satellitensysteme bieten beispielsweise eine großflächige Abdeckung, haben aber nur niedrige Wiederholraten, was eine benötigte Echtzeit-Warnung oft nicht möglich macht. Terrestrische Kamerasysteme sind hingegen schneller, in ihrer Zuverlässigkeit jedoch stark von Sichtblockaden wie Nebel, Topografie oder dichte Vegetation abhängig. Außerdem führen Fehlalarme, etwa durch Wolkenschatten oder Sonnenreflexionen, zu einer Desensibilisierung der Einsatzkräfte und Ressourcenverschwendung [Chagger, 2018].
-Folglich besteht eine Diskrepanz zwischen den theoretischen Möglichkeiten einzelner Technologien und der praktischen Anforderung an ein System, das minimale Latenz mit einer niedrigen Fehlalarmrate verbindet. 
 Daher stellt sich die Frage:
+
 Welche Kombination aus sensorischen und optischen Frühwarnsystemen bietet unter Berücksichtigung von Latenzzeit, Fehlalarmrate und Kosteneffizienz den effektivsten Schutz vor Waldbränden?
 
+\chapter{Relevanz der Früherkennung}\label{ch:relevanz}
 
+Die Dringlichkeit der frühzeitigen Erkennung von Waldbränden liegt in der erheblichen Senkung von Verlusten und Ausgaben durch die Verkürzung der Zeitspanne zwischen Wahrnehmung und Eingreifen. Je früher ein Brand erkannt wird, desto schneller können Schäden minimiert werden. Dabei bietet die Phase zwischen dem Brandausbruch und der offenen Flamme, die sogenannte Schwelbrandphase, das größte Potenzial für eine effektive Brandbekämpfung. In dieser Phase kann ein Entstehungsbrand oft mit minimalem Aufwand gelöscht werden, bevor er sich zu einem unkontrollierbaren Vollbrand entwickelt~\cite{TobisJakobs}.
 
-\chapter{Relevanz des Früherkennung}\label{ch:relevanz}
+Herkömmliche Methoden, wie die Notrufmeldung durch die Öffentlichkeit oder bemannte Feuerwachtürme, werden zwar weltweit zur Entdeckung von Waldbränden genutzt, reichen aber nicht aus, um Brände immer frühzeitig zu erkennen. 
 
-Warum reicht der Status Quo (Notruf, Türme) nicht mehr
+Notrufe sind die älteste Methode, um Gefahrenzustände zu melden. Sie hängen jedoch stark von der Bevölkerungsdichte ab. Gebiete mit großer Wald- und Vegetationsdichte, aber nur geringen Einwohnerzahlen, sind hier besonders benachteiligt. Bemannte Feuerwachtürme ermöglichen eine vergleichsweise schnellere Erkenung, sind aber oft nicht präzise genug und nach deutschen Arbeitsplatzbestimmungen nicht mehr zulässig, sodass sie nur noch in wenigen Regionen existieren~\cite{DirkSchneider2017}.
 
-
+Die Relevanz dieser Arbeit liegt daher in der Evaluierung neuer Technologien, um die kritische Lücke zwischen Entstehung und Sichtbarkeit von Waldbränden zu schließen.
 
 
 \chapter{Zielsetzung und Hypothesenbildung}\label{ch:zielsetzung}
 
-Ziel dieser Arbeit ist die Evaluierung und vergleichende Analyse verschiedener technologischer Ansätze zur Waldbrandfrüherkennung. Dabei soll herausgearbeitet werden, ob und wie durch Kombination von Technologien die Detektionslatenz verkürzt und die Fehlalarmrate gesenkt werden kann. Der Schwerpunkt liegt hierbei auf der Gegenüberstellung von rein optischen Systemen (Kamera/Satellit) und hybriden Ansätzen, die lokale IoT-Sensorik integrieren.
+Die vorliegende Arbeit aht die Evaluierung und vergleichende Analyse verschiedener technologischer Ansätze zur Waldbrandfrüherkennung zum Ziel. Dabei soll herausgearbeitet werden, ob und wie sich durch Kombination von Technologien die Detektionslatenz verkürzen und die Fehlalarmrate senken lässt. Der Schwerpunkt liegt hierbei auf dem Vergleich von rein optischen Systemen (Kamera/Satellit) und hybriden Ansätzen, die lokale IoT-Sensorik integrieren.
 Es wird die Hypothese aufgestellt, dass multimodale Systeme, die lokale chemische Sensoren zur Initialerkennung der Schwelbrandphase nutzen und diese mit optischen Systemen zur Verifizierung kombinieren, eine signifikant höhere Zuverlässigkeit und Geschwindigkeit bieten als rein singuläre Lösungen.

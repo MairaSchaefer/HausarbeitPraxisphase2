@@ -31,17 +31,17 @@
     ],
     "latex-workshop.latex.recipes": [
         {
-            "name": "pdflatex",
-            "tools": [
-                "pdflatex"
-            ]
-        },
-        {
             "name": "pdflatex ➞ biber ➞ pdflatex²",
             "tools": [
                 "pdflatex",
                 "biber",
                 "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
                 "pdflatex"
             ]
         }
