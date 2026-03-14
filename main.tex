@@ -40,13 +40,12 @@
 % Define the variables used in the title page
 \newcommand{\myUni}{Hochschule Darmstadt}
 \newcommand{\myFaculty}{Fachbereich Informatik}
-\newcommand{\myTitle}{Title}
+\newcommand{\myTitle}{Vergleichende Analyse moderner Waldbrand-Frühwarnsysteme:\\ Evaluation von Synergien zwischen terrestrischer IoT-Sensorik, optischer Überwachung und Satellitendaten}
 \newcommand{\myDegree}{Bachelor of Science (B.Sc.)}
-\newcommand{\myName}{Max Mustermann}
-\newcommand{\myId}{1234567}
-\newcommand{\myProf}{Prof. Dr. Max Mustermann}
-\newcommand{\myOtherProf}{Prof. Dr. Maxine Mustermann}
-\newcommand{\myTime}{30. September 2025}
+\newcommand{\myName}{Maira Schäfer}
+\newcommand{\myId}{1132721}
+\newcommand{\myProf}{Dr. Johannes Werner}
+\newcommand{\myTime}{20. März 2026}
 
 % Custom colors
 \definecolor{myred}{HTML}{990000}
@@ -70,7 +69,7 @@
     breaklines=true,
     captionpos=b,
     frame=single,
-    morestring=[b]",
+    morestring=[b],
     morecomment=[l][\color{jsonComment}]{\#}
 }
 
@@ -101,19 +100,19 @@
 \input{bibliography/abbreviation.tex}
 
 \setcounter{page}{0} % Reset the page counter. Start counting here
-\part{Thesis}\label{pt:thesis}
+\part{Einleitung}\label{pt:einleitung}
 \input{chapters/chapter1/chapter1.tex}
 
-\part{Grundlagen}\label{pt:glrundlagen}
+\part{Theoretische Grundlagen der Branddetektion}\label{pt:grundlagen}
 \input{chapters/chapter2/chapter2.tex}
 
-\part{Implementierung}\label{pt:implementierung}
+\part{Aktueller Stand der Technik}\label{pt:standdertechnik}
 \input{chapters/chapter3/chapter3.tex}
 
-\part{Evaluation}\label{pt:evaluation}
+\part{Evaluierung und Konzeptentwicklung}\label{pt:evaluierungKonzeptentwicklung}
 \input{chapters/chapter4/chapter4.tex}
 
-\part{Zusammenfassung und Ausblick}\label{pt:zua}
+\part{Diskussion und Fazit}\label{pt:diskussionFazit}
 \input{chapters/chapter5/chapter5.tex}
 
 \part{Appendix}\label{pt:appendix}
