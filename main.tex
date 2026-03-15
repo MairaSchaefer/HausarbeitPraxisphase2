@@ -18,6 +18,7 @@
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{amsmath}
+\usepackage{siunitx}
 \usepackage[patch=none]{microtype}
 \usepackage[backend=biber, style=alphabetic, doi=true, url=true]{biblatex}
 \addbibresource{bibliography/references.bib}
@@ -73,7 +74,10 @@
     morestring=[b],
     morecomment=[l][\color{jsonComment}]{\#}
 }
-
+\sisetup{
+  range-phrase = --,    % Nutzt den Bis-Strich statt "bis"
+  range-units  = single % Schreibt die Einheit nur einmal am Ende
+}
 % Configure listings for bash
 \definecolor{codebg}{rgb}{0.95, 0.95, 0.95}
 \lstset{
