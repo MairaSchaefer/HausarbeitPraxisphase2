@@ -1,4 +1,4 @@
-% chktex-file 18
+
 \chapter{Weltraumgestützte Systeme}\label{ch:weltraumgestuetztesysteme}
 
 
@@ -6,6 +6,13 @@ Weltraumgestützte Systeme nutzen verschiedene Sensorplattformen und Orbit-Konfi
 
 Für die globale Brandfrüherkennung wird verstärkt die Visible Infrared Imaging Radiometer Suite (\ac{VIIRS}) eingesetzt, die auf Plattformen wie \ac{Suomi NPP} und \ac{JPSS} installiert ist. Als scannendes Radiometer tastet \ac{VIIRS} die Oberfläche im sichtbaren und infraroten Spektrum ab. Es vereint die Funktionen älterer Sensoren wie \ac{MODIS} oder \ac{AVHRR}, bietet jedoch eine deutlich präzisere räumliche Auflösung und höhere Genauigkeit bei der Detektion thermischer Anomalien~\cite{MODISLexikon, TerraLexikon, VIIRSLexikon}.
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.65\textwidth]{gfx/FireBird.jpeg} 
+    % [Kurzform für Verzeichnis]{Langform mit Quelle für unter das Bild}
+    \caption[FireBIRD zur Waldbrandfrüherkennung\cite{DZLR2024}]{FireBIRD zur Waldbrandfrüherkennung}
+    \label{fig:FireBIRD}
+\end{figure}
 Ergänzend dazu liefern spezialisierte Kleinsatelliten-Missionen hochauflösende Daten zur Feuerintensität. Nach dem Pionierprojekt \ac{BIRD} wurde die FireBIRD-Mission mit den Satelliten \ac{TET-1} und \ac{BIROS} entwickelt. Diese Systeme detektieren Brände nicht nur, sondern charakterisieren die Feuerfront mit einer Detailtiefe, die herkömmliche Breitbereichs-Sensoren übertrifft~\cite{DZLR2024}.
 
 Einen innovativen Ansatz verfolgt das Unternehmen OroraTech mit einer Konstellation von acht Satelliten. Diese Anordnung ermöglicht die Erkennung von Brandherden bereits ab einer Größe von 4\,$\times$\,4\,m, was eine extrem frühzeitige Alarmierung erlaubt. Ein wesentlicher Vorteil ist zudem die Abdeckung der Nachmittags- und Nachtstunden, die von Standard-Systemen bisher kaum erfasst wurden. Um die Latenzzeit zu minimieren, werden die massiven Datenmengen mittels Edge-Computing direkt auf dem Satelliten per KI ausgewertet, sodass die Ergebnisse nahezu in Echtzeit vorliegen~\cite{Seton2025, DZLR2024}.
@@ -13,6 +20,14 @@ Einen innovativen Ansatz verfolgt das Unternehmen OroraTech mit einer Konstellat
 \chapter{Optisch-terrestrische Systeme}\label{ch:optischTerrestrischeSysteme}
 
 Optisch-terrestrische Systeme ergänzen die Fernerkundung durch stationäre, hochgelegene Kamerasensoren auf Türmen oder Gebäude. Moderne Einheiten kombinieren hochauflösende Optiken mit KI-basierter Analysesoftware, um Rauch- und Feuersignaturen automatisiert in Echtzeit zu detektieren~\cite{IQGmbH2023,Winter2021}.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.65\textwidth]{gfx/Paratronic.jpg} 
+    % [Kurzform für Verzeichnis]{Langform mit Quelle für unter das Bild}
+    \caption[Waldbranderkennungssystem ADELIE von Paratronic \cite{Gemmingen2022}]{Waldbranderkennungssystem ADELIE von Paratronic}
+    \label{fig:Paratronic}
+\end{figure}
+
 
 Zur lückenlosen Gebietsüberwachung verfügen diese Systeme über rotierende Schwenk-Neige-Köpfe mit einem Radius von \qty{360}{\degree}. Das System ADELIE von Paratronic benötigt für eine vollständige Umdrehung maximal zwei Minuten~\cite{Gemmingen2022}. Technologisch führend ist das vom DLR mitentwickelte System \enquote{IQ FireWatch}, das multispektrale Sensoren (\ac{Monochrom}, \ac{NIR}, RGB) integriert. Das ermöglicht eine Brandfrüherkennung bei unterschiedlichen Lichtverhältnissen auf Distanzen von bis zu 60~km~\cite{IQGmbH2023}.
 
@@ -21,6 +36,14 @@ Die Auswertung erfolgt über hybride Algorithmen: Klassische Merkmalsanalysen we
 \chapter{IoT-basierte Sensornetzwerke}\label{ch:IoTbasierteSensornetzwerke}
 
 Während satelliten- und optisch-terrestrische Systeme einen Brand oft erst nach der Entstehung offener Flammen oder Rauchsäulen erkennen, setzen \ac{IoT}-basierte Sensornetzwerke direkt am Waldboden an. Dies ermöglicht die Detektion bereits in der Schwelbrandphase. Kernstück dieser Technologie sind sogenannte \enquote{digitale Nasen} (Electronic Noses), die das biologische Geruchssystem imitieren. Sie bestehen aus Arrays chemischer Sensoren, die spezifische Brandgase wie Kohlenstoffmonoxid, Wasserstoff oder flüchtige organische Verbindungen (\ac{VOCs}) wahrnehmen. Die chemischen Informationen werden in elektrische Signale umgewandelt und als mehrdimensionales Geruchsprofil mittels maschinellen Lernens mit Referenzmustern von Feuer und Rauch abgeglichen~\cite{Chan2024, FayosJordan2024, Kumar2023}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.65\textwidth]{gfx/DryadNetworks.png} 
+    % [Kurzform für Verzeichnis]{Langform mit Quelle für unter das Bild}
+    \caption[Silvanet-Sensor von Dryad Networks \cite{DNG}]{Silvanet-Sensor von Dryad Networks}
+    \label{fig:DryadNetworks}
+\end{figure}
 
 Ein wegweisendes Forschungsprojekt ist \ac{KIWB} (KI-basiertes Warnsystem zur Waldbranderkennung), das auf energieautarken Gassensoren basiert. Ziel ist es, Schwelbrände ab einer Ausdehnung von nur einem Quadratmeter sicher zu detektieren und dabei durch spezialisierte KI-Lösungen eine Fehlalarmquote von unter einem Prozent zu erreichen~\cite{BBF2025}. Im kommerziellen Sektor nutzt das Silvanet-System (Dryad Networks) solarbetriebene, direkt an Bäumen installierte Sensoren, die Brände innerhalb weniger Minuten nach der Entzündung melden können~\cite{DNG}.
 
